@@ -1,0 +1,25 @@
+.image {
+	$this: &;
+	overflow: hidden;
+
+	&__img {
+		max-width: 100%;
+		width: auto;
+		height: auto;
+		display: block;
+		transition: {
+			property: transform;
+			timing-function: var(--global-easing);
+			duration: 0.3s;
+		}
+	}
+
+	&--full {
+		width: 100%;
+
+		#{$this}__img {
+			width: 100%;
+			max-width: none;
+		}
+	}
+}

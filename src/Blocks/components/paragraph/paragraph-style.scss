@@ -1,0 +1,28 @@
+.paragraph {
+	--p-color: var(--paragraph-color);
+	--p-font-size: var(--paragraph-font-size);
+	--p-line-height: var(--paragraph-line-height);
+	--p-link-color: var(--paragraph-link-color);
+	--p-link-color-hover: var(--paragraph-link-color-hover);
+
+	margin: 0;
+	padding: 0;
+	color: var(--p-color);
+	font-size: var(--p-font-size);
+	line-height: var(--p-line-height);
+
+	a {
+		cursor: pointer;
+		text-decoration: underline;
+		color: var(--p-link-color);
+		transition: {
+			property: color;
+			timing-function: ease-in;
+			duration: 0.3s;
+		}
+
+		&:hover {
+			color: var(--p-link-color-hover);
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"blockName": "lists",
+	"title": "Lists",
+	"description" : "lists block with custom settings.",
+	"category": "eightshift",
+	"icon": {
+		"src": "es-lists"
+	},
+	"keywords": [
+		"lists",
+		"btn",
+		"lists"
+	],
+	"components": {
+		"lists": "lists"
+	}
+}
